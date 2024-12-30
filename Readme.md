@@ -27,6 +27,12 @@ This is a multi-container setup of a wordpress page using docker compose.
     git clone https://github.com/mihaiandreineacsu/wordpress.git
     ```
 
+1. Navigate to project folder
+
+    ```bash
+    cd wordpress
+    ```
+
 1. Create a `.env` file and paste it the content of [template.env](./template.env).
 
     > [!Important] Replace the default values with more secured ones in the `.env` file.
