@@ -1,14 +1,16 @@
 # Wordpress
 
-This is a multi-container setup of a wordpress page using docker compose.
+This is a multi-container setup of a wordpress page using docker compose. It aims to demonstrate how easy it is to setup a wordpress website using only docker and docker-compose.
+
+WordPress is a popular open-source content management system (CMS) that allows users to create and manage websites easily, including blogs, online stores, and business sites. It offers customizable themes, plugins, and a user-friendly interface, making it suitable for beginners and developers alike.
 
 ---
 
-## Table of content
+## Table of contents
 
 - [Dependencies](#dependencies)
 - [Quick start](#quick-start)
-- [Structure]()
+- [Structure](#structure)
 
 ---
 
@@ -33,13 +35,9 @@ This is a multi-container setup of a wordpress page using docker compose.
     cd wordpress
     ```
 
-1. Create a `.env` file and paste it the content of [template.env](./template.env).
+1. Create your `.env` file by copying [`template.env`](./template.env) with the command `cp template.env .env`
 
-    > [!Important] Replace the default values with more secured ones in the `.env` file.
-
-    ```bash
-    cat template.env > .env
-    ```
+    > [!IMPORTANT] Replace the default values with more secured ones in the `.env` file.
 
 1. Start application
 
@@ -52,7 +50,7 @@ This is a multi-container setup of a wordpress page using docker compose.
     - Open the wordpress page via **http://<your_ip>:<your_port>**.
     - Select the language you prefer and press `Continue`.
         ![alt text](image.png)
-        > [!Note] The language can be changed afterwards in Wordpress settings.
+        > [!NOTE] The language can be changed afterwards in Wordpress settings.
     - Fill up the form and click `Install Wordpress`.
         ![alt text](image-1.png)
     - Processed to login by pressing `Log in`.
