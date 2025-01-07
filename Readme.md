@@ -68,6 +68,7 @@ WordPress is a popular open-source content management system (CMS) that allows u
 
   **wordpress** service:
   - Uses the [wordpress](https://hub.docker.com/_/wordpress) docker image.
+    > [!TIP] As an alternative you can use the bitnami image from wordpress. <https://github.com/bitnami/containers/tree/main/bitnami/wordpress#how-to-use-this-image>
   - It binds the host port `8080` to container port `80`.
   - Defines the wordpress database environment variables `WORDPRESS_DB_HOST`, `WORDPRESS_DB_USER`, `WORDPRESS_DB_PASSWORD`, `WORDPRESS_DB_NAME`.
   - Binds `/var/www/html` to **wordpress** volume.
